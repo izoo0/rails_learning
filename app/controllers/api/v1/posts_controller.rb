@@ -9,7 +9,9 @@ class Api::V1::PostsController < ApplicationController
   end
 
   # GET /posts/1
+  #wait for 3 second
   def show
+    sleep 3
     render json: @post
   end
 
