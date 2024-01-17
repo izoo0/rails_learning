@@ -36,6 +36,7 @@ const PostList = () => {
           <div key={post.id} className='post-list'>
               <h2><Link to={`/single-post/${post.id}`}>{post.title}</Link></h2>
               <h5>{post.body}</h5>
+              <Link to={`/edit-post/${post.id}`}>Edit</Link>
           </div>  
      ))
     }

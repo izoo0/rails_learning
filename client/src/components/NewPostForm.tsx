@@ -39,11 +39,11 @@ const NewPostForm = ()=>{
                <br />
                <label htmlFor="bodyInput">Body:</label>
                <br />
-               <input type="text" 
+               <textarea 
                id="titleInput" 
                value={body}  
                onChange={(e)=>setBody(e.target.value)}
-               />
+               ></textarea>
                <br />
            <button type="submit">Submit</button>
            </form>
