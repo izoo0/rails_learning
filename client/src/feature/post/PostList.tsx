@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { API_URL } from '../../vite-env.d'
+import { Link } from 'react-router-dom'
 
 const PostList = () => {
      const[posts,setPost] = useState([])
@@ -33,7 +34,7 @@ const PostList = () => {
     {
      posts.map((post)=>(
           <div key={post.id} className='post-list'>
-              <h2>{post.title}</h2>
+              <h2><Link to={`/single-post/${post.id}`}>{post.title}</Link></h2>
               <h5>{post.body}</h5>
           </div>  
      ))
