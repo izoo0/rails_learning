@@ -1,10 +1,13 @@
 import React from 'react'
+import NewPostForm from '../../components/NewPostForm'
 
 
 
 const NewPost=()=> {
   return (
-    <div>NewPost</div>
+    <>
+     <NewPostForm/>
+    </>
   )
 }
 
