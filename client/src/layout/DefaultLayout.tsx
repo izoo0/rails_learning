@@ -5,7 +5,6 @@ const DefaultLayout = () => {
    <div>
      <NavBar/>
       <Outlet/>
-    <div>Footer</div>
    </div>
   )
 }
