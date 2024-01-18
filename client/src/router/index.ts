@@ -1,7 +1,7 @@
 import { lazy } from 'react'
 const SinglePost = lazy(()=>import('../feature/post/SinglePost'))
 const NewPost = lazy(()=>import('../feature/post/NewPost'))
-const EditPost = lazy(()=>import('../components/PostEditForm'))
+const EditPost = lazy(()=>import('../feature/post/EditPost'))
 
 const otherRoutes = [
      {    
